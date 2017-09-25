@@ -19,14 +19,14 @@
       margin: 0;
     }
     @include media( "screen", ">bp1Width") {
-      max-width: 80%;
-      margin-left: 10%;
-      margin-right: 10%;
+      max-width: 86%;
+      margin-left: 12%;
+      margin-right: 12%;
     }
     @include media( "screen", ">maxWidth") {
-      max-width: 60%;
-      margin-left: 20%;
-      margin-right: 20%;
+      max-width: 74%;
+      margin-left: 13%;
+      margin-right: 13%;
     }
   }
 
@@ -56,6 +56,12 @@
       margin-top: $vertical_rhythm;
       margin-right: 0;
     }
+  }
+
+  .page_title {
+    font-weight: 600;
+    padding-right: 5px;
+
   }
 }
 
@@ -106,6 +112,18 @@
   align-items: flex-start;
   @include media( "screen", ">minWidth") {
     width: 32%;
+  }
+}
+.menu_socials {
+  @include media( "screen", ">minWidth") {
+    width: 24%;
+  }
+}
+.menu_contacts,
+.menu_products {
+  @include media( "screen", ">minWidth") {
+    width: 36%;
+    overflow: hidden;
   }
 }
 
