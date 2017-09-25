@@ -110,7 +110,7 @@ svg {
     margin: 0 auto;
   }
 
-  p,
+  p:not(.reference),
   .book_now,
   h4 {
     margin: 0 0 0 auto;

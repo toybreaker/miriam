@@ -1,0 +1,13 @@
+<div class="gofigure">
+  {% capture imagePath %}{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
+  {% if include.caption %}
+
+  <figure>
+    <img src="/assets/p/products/{{ page.product_group }}/{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
+    <figcaption>{{ include.caption }}</figcaption>
+  </figure>
+
+  {% else %}
+  <img src="/assets/p/products/{{ page.product_group }}/{{ imagePath }}" {% if include.alt %} alt="{{ include.alt }}" {% endif %} {% if include.width %} width="{{ include.width }}" {% endif %}/>
+  {% endif %}
+</div>

@@ -16,7 +16,7 @@
             {% unless item.publish=="notyet" %}
             <a class="menu_item active" role="menuitem" title="{{ item.title }}" href="{{ item.url | prepend: site.baseurl }}">
               <span class="page_title">{{ item.name }}</span>
-              <span class="page_subtitle">{{ item.name }}</span>
+              <span class="page_subtitle">{{ item.subtitle | strip_html | truncate: 35 }}</span>
             </a>
             {% endunless %}
           {% else %}

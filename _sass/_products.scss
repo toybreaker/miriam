@@ -4,6 +4,15 @@ figure {
   padding: 0;
 }
 
+figcaption {
+  text-align: right;
+}
+
+.gofigure {
+  margin-top: $vertical_rhythm--small;
+  margin-bottom: $vertical_rhythm--small;
+}
+
 .figcaption {
   position: absolute;
   top: $vertical_rhythm--small;
@@ -121,4 +130,10 @@ blockquote p {
   .index & {
     line-height: 18px;
   }
+}
+
+.reference {
+  margin: 0;
+  padding-top: $vertical_rhythm--small/2;
+  padding-bottom: $vertical_rhythm--small/2;
 }
