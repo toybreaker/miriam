@@ -123,7 +123,8 @@ svg {
     }
     @include media( "screen", ">maxWidth"){
       max-width: 500px;
-    }  }
+    }
+  }
 
   dl,
   ol,

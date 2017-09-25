@@ -200,7 +200,9 @@
     justify-content: center;
 
     &.active {
-      background-color: $grey--light;
+      .long_menu & {
+        background-color: $grey--light;
+      }
     }
     @include media( "screen", ">minWidth") {
       -webkit-box-pack: start;

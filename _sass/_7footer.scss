@@ -4,7 +4,7 @@
   width: 100%;
   background-color: $grey--light;
 
-  .container {
+  .inner_container {
     box-shadow: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -16,17 +16,6 @@
 
     @include media( "screen", ">minWidth") {
       width: 100%;
-      margin: 0;
-    }
-    @include media( "screen", ">bp1Width") {
-      max-width: 86%;
-      margin-left: 12%;
-      margin-right: 12%;
-    }
-    @include media( "screen", ">maxWidth") {
-      max-width: 74%;
-      margin-left: 13%;
-      margin-right: 13%;
     }
   }
 
@@ -38,7 +27,7 @@
     margin-bottom: $vertical_rhythm/6;
     border-bottom: 1px solid $grey;
     width: 100%;
-    @include media( "screen", ">minWidth") {
+    @include media( "screen", ">bp1Width") {
       border-bottom: 0 none;
       padding-top: 0;
       width: auto;
@@ -77,7 +66,7 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  @include media( "screen", ">minWidth") {
+  @include media( "screen", ">bp1Width") {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -110,18 +99,19 @@
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  @include media( "screen", ">minWidth") {
+  overflow: hidden;
+  @include media( "screen", ">bp1Width") {
     width: 32%;
   }
 }
 .menu_socials {
-  @include media( "screen", ">minWidth") {
+  @include media( "screen", ">bp1Width") {
     width: 24%;
   }
 }
 .menu_contacts,
 .menu_products {
-  @include media( "screen", ">minWidth") {
+  @include media( "screen", ">bp1Width") {
     width: 36%;
     overflow: hidden;
   }
@@ -146,7 +136,23 @@
 }
 
 .copyright {
-  font-size: 10px;
+  font-size: 14px;
   padding-top: $vertical_rhythm;
   margin-top: $vertical_rhythm;
+}
+
+
+.menu_item .page_subtitle.fat {
+  display: inline;
+  overflow: hidden;
+  @include media( "screen", ">bp1Width") {
+    display: none;
+  }
+}
+
+.menu_item .page_subtitle.skinny {
+  display: none;
+  @include media( "screen", ">bp1Width") {
+    display: inline;
+  }
 }
