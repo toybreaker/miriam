@@ -1,0 +1,24 @@
+<div class="slideshow_wrap">
+
+  <div class="slideshow">
+
+    <div class="slideshow-slide-list">
+
+      {% comment %}
+      from: http://stackoverflow.com/questions/17677094/jekyll-for-loop-over-all-images-in-a-folder
+      {% endcomment %}
+
+      {% for image in site.static_files %}
+        {% if image.path contains 'p/gallery' %}
+        <div class="slideshow-slide">
+          <div class="" data-src="{{ site.baseurl }}{{ image.path }}">
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+
+    </div>
+
+  </div>
+
+</div>

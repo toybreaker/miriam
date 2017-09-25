@@ -1,0 +1,96 @@
+title: Miriam Lieberman
+subtitle:
+content_is_about: Standards
+show_logo: hide # 'show' or 'hide'
+description: > # this means to ignore newlines until "baseurl:"
+
+keywords: teaching, portfolio
+lang: en_US
+version: 0.0.1
+
+baseurl: ""
+url: "https://miriam.junglestar.org"
+qr: hide # 'show' or 'hide' put qr.svg in includes/defs.html call it: icn--qr
+menu: short_menu # 'short_menu' or 'long_menu'
+
+company:
+  name: Miriam
+  legal_name: Miriam Lieberman #if need to overrides 'company.name' in footer fill up this one
+  email: info@miriamlieberman.com.au
+  telephone: +61 433195972
+  fax:
+  address:
+  maplink: #complete URL
+  country:
+  other_website_name: miriamlieberman.com.au
+  other_website_url: http://www.miriamlieberman.com.au/
+  twitter: https://twitter.com/MiriamLieb
+  facebook_page: https://www.facebook.com/MiriamLiebermanMusic/
+  youtube: https://www.youtube.com/user/MiriamLieberman
+  instagram: #complete URL
+  linkedin: #complete URL
+  tripadvisor: #complete URL
+  booking: #complete URL
+  airbnb: #complete URL
+  gplus: https://plus.google.com/u/0/110581546619901471495
+  tumblr: #complete URL
+  soundcloud: https://soundcloud.com/miriamieberman
+  bandcamp: https://miriamlieberman.bandcamp.com/
+
+#SEO https://jekyll.github.io/jekyll-seo-tag/usage/
+#
+# SEO tag will use the YAML front matter if included in a post, page, or document:
+#
+# title
+# description
+# image - (e.g., /assets/page-pic.jpg)
+# author - Page-specific author (see below)
+# lang - Page-specific language
+
+author: rokma
+twitter:
+  username: rokmatwit
+facebook:
+  app_id: #Facebook app ID for Facebook insights
+  publisher: #Facebook page URL or ID of the publishing entity
+  admins: #Facebook user ID for domain insights linked to a personal account
+logo: /assets/favicons/apple-touch-icon-152x152.png
+webmaster_verifications:
+  google: google32e66f1a5601ec40
+
+
+google:
+  analytics: #
+
+# Build settings
+markdown: kramdown
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag
+ - jekyll-redirect-from
+ - jekyll-sitemap
+ - html-proofer
+exclude:
+  - Gemfile.lock
+  - node_modules
+  - package-lock.json
+  - rokmama.gemspec
+  - Gemfile
+  - rakefile
+
+permalink: /:title/ # pretty
+
+collections:
+  products:
+    output: true
+    permalink: /:path/
+  pages:
+    output: true
+    permalink: /:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: products
+    values:
+      layout: product # change this to get the layout needed

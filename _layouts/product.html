@@ -1,0 +1,79 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="{% if page.lang %}{{page.lang}}{% else %}{{site.lang}}{% endif %}">
+
+  {% include head.html %}
+
+  <body class="{{page.product_group | slugify}} product {{page.title | slugify}} {% if site.menu %}{{site.menu}}{% endif %}">
+
+    {% include svg/defs.html %}
+
+    {% include header.html %}
+
+    <div class="bungkus group {{ page.product_group }}">
+
+      <div class="product_image_group">
+
+        {% if page.image %}
+        <div class="slideshow_wrap">
+          <div class="slideshow slideshow-padding">
+            <div class="slideshow-slide-list slideshow-float">
+              <div class="slideshow-slide ">
+
+                <div class="" data-src="{{ page.image | global_asset_url }}" style="background-image: url('{{ page.image | global_asset_url }}');">>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+
+        <div class="product_group {{ page.product_group | slugify }}">
+          {{ page.product_group }}
+        </div>
+
+      </div>
+
+      <div class="container" role="main">
+
+        <h1>{{ page.name}}</h2>
+
+        <h3>{{ page.subtitle }}</h3>
+
+
+        <div class="product_text">
+
+          <div class="product_text_content">
+
+            {{ content }}
+
+            {% if page.button_book_link %}
+            <a class="button_row book_now" title="Book this Now!" href="{{ page.button_book_link }}">
+              <span class="button">Book Now</span>
+            </a>
+            {% endif %}
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    {% include footer.html %}
+
+    {% include script_ext_link.html %}
+
+    {% include script_append_to_copy_action.html %}
+
+    {% if site.google.analytics %}
+      {{ site.google.analytics }}
+    {% endif %}
+
+  </body>
+
+</html>

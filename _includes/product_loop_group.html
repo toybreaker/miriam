@@ -1,0 +1,20 @@
+<div class="product_page_title">
+  <h1>{{page.title}}</h1>
+</div>
+
+<div class="product_grid">
+<!-- store the current product kind into 'pagegroup' -->
+{% capture pagegroup %}{{ page.product_group | slugify }}{% endcapture %}
+
+<!-- use the captured 'pagegroup' to filter the loop -->
+{% for product in site.products %}
+  {% if product.path contains pagegroup %}
+    <!-- dont display the ones with 'notyet' -->
+    {% unless product.publish=='notyet' %}
+      
+      {% include product_card.html %}
+
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+</div>

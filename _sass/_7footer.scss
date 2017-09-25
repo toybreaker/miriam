@@ -1,0 +1,134 @@
+.footer {
+  display: block;
+  padding: $vertical_rhythm 0;
+  width: 100%;
+  background-color: $grey--light;
+
+  .container {
+    box-shadow: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    @include media( "screen", ">minWidth") {
+      width: 100%;
+      margin: 0;
+    }
+    @include media( "screen", ">bp1Width") {
+      max-width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    @include media( "screen", ">maxWidth") {
+      max-width: 60%;
+      margin-left: 20%;
+      margin-right: 20%;
+    }
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-top: $vertical_rhythm;
+    padding-bottom: $vertical_rhythm/6;
+    margin-bottom: $vertical_rhythm/6;
+    border-bottom: 1px solid $grey;
+    width: 100%;
+    @include media( "screen", ">minWidth") {
+      border-bottom: 0 none;
+      padding-top: 0;
+      width: auto;
+    }
+  }
+
+  svg {
+    width: $icon_size;
+    height: $icon_size;
+    margin-right: 10px;
+
+    &.qr {
+      width: 100px;
+      height: 100px;
+      margin-top: $vertical_rhythm;
+      margin-right: 0;
+    }
+  }
+}
+
+.menu_footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  @include media( "screen", ">minWidth") {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .menu_item {
+    min-height: 42px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .email a span,
+  .other_website a span {
+    text-transform: none;
+  }
+}
+
+.menu_contacts,
+.menu_products,
+.menu_socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  @include media( "screen", ">minWidth") {
+    width: 32%;
+  }
+}
+
+.menu_contacts .name {
+  color: black;
+}
+
+.footer_company_name {
+  font-family: $font_family_headings;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: $vertical_rhythm;
+  margin-bottom: $vertical_rhythm;
+  text-align: center;
+  @include media( "screen", ">minWidth") {
+    // width: 24%;
+    text-align: left;
+  }
+}
+
+.copyright {
+  font-size: 10px;
+  padding-top: $vertical_rhythm;
+  margin-top: $vertical_rhythm;
+}

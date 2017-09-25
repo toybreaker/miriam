@@ -1,0 +1,68 @@
+---
+---
+//rok&scroll
+$font_family: 'Open Sans Condensed', sans-serif;
+$font_family_headings: 'Raleway', sans-serif;
+
+$black: hsl(0,0%,0%);
+$link_color: hsl(0,0%,0%);
+$bg_color: hsl(0, 0%, 96%);
+$grey: hsl(0,0%,45%);
+$grey--light: hsl(0,0%,85%);
+$underline_link_color : #b4e7f8;
+$product_category_1: hsla(117, 100%, 81%, .75); //food
+$product_category_2: hsla(43, 100%, 81%, .75); //tour
+$product_category_3: hsla(205, 100%, 81%, .75); //accommodation
+
+$vertical_rhythm: 2rem;
+$vertical_rhythm--small: 1rem;
+
+$base_font_size--tiny: 17px;
+$base_font-size--min: 18px;
+$base_font_size--bp1: 19px;
+$base_font_size--max: 20px;
+$base_line_height: 1.4446;
+$heading1: 2rem;
+$heading2: $heading1/8*7;
+$heading2: $heading1/8*6;
+
+//all svg icons are square:
+$icon_size: 30px;
+
+//shadows
+$header_shadow: 0 2px 10px 0 rgba($black,0.16);
+$card_shadow: 0px 0px 2px 0px rgba($black,0.12), 0px 2px 2px 0px rgba($black,0.24);
+$card_shadow--hover: 0px 0px 8px 0px rgba($black,0.12), 0px 8px 8px 0px rgba($black,0.24);
+
+$transition_shadow: box-shadow 0.2s ease;
+
+// buttons
+$black_stroke: hsl(0,0%,60%);
+$button_focus_bg: hsla(0, 0%, 91%, 1);
+$button_book: hsl(205, 100%, 51%);
+
+//// Predefined Break-points
+$mediaMinWidth: 600px;
+$mediaBp1Width: 840px;
+$mediaMaxWidth: 1260px;
+
+@import
+"1normalize",
+"2cmq",
+"3base",
+"4headings",
+"5menu",
+"6header",
+"7footer",
+"8svg",
+"9buttons",
+"links",
+"titles",
+"slideshow",
+"products",
+"product_details",
+"cards",
+"home",
+"video",
+"social_sharing"
+;
