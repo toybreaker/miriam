@@ -48,6 +48,7 @@ $mediaMaxWidth: 1260px;
 
 @import
 "1normalize",
+"mixins",
 "2cmq",
 "3base",
 "4headings",
@@ -64,5 +65,5 @@ $mediaMaxWidth: 1260px;
 "cards",
 "home",
 "video",
-"social_sharing"
+"nav"
 ;

@@ -12,7 +12,10 @@
 
     {% include header.html %}
 
+
     <div class="bungkus group {{ page.product_group }}">
+
+      {% include nav--horizzo.html %}
 
       <div class="product_image_group">
 
@@ -30,10 +33,6 @@
           </div>
         </div>
         {% endif %}
-
-        <div class="product_group {{ page.product_group | slugify }}">
-          {{ page.product_group }}
-        </div>
 
       </div>
 
