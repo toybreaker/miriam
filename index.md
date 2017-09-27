@@ -7,7 +7,7 @@ image: "/assets/p/home/00.jpg"
 # TEACHING PHILOSOPHY
 
 > "You hear, you remember, you do and you understand, you teach and you know."
-Helen Tyas Tunggal ( Retired principal at Harwood Island School)
+_Helen Tyas Tunggal (Retired principal at Harwood Island School)_
 
 Teaching is about facilitating a passion for lifelong learning. It is equipping students with the skills for problem-solving and creating an environment of inquiry that uses creative thinking to examine, solve and innovate.
 
