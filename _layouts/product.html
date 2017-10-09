@@ -15,9 +15,9 @@
 
     <div class="bungkus group {{ page.product_group }}">
 
+      {% if page.image %}
       <div class="product_image_group">
 
-        {% if page.image %}
         <div class="slideshow_wrap">
           <div class="slideshow slideshow-padding">
             <div class="slideshow-slide-list slideshow-float">
@@ -30,9 +30,9 @@
             </div>
           </div>
         </div>
-        {% endif %}
 
       </div>
+      {% endif %}
 
       <div class="container" role="main">
 

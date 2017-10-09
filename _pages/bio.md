@@ -2,7 +2,7 @@
 layout: default
 title: Bio
 description: #
-image: /assets/p/products/fruits/starfruits.jpg
+image: /assets/p/gallery/IMG_0770.jpg
 ---
 ## Biography
 

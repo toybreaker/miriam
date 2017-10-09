@@ -16,3 +16,9 @@ It is my role as a teacher to create a positive learning environment, one that p
 I endeavor to meet my students where they are, provide clearly scaffolded lessons that are proximal to their needs through knowing my students and how they learn.
 
 I endeavor to foster an environment where students can work together toward their learning goals eventually bringing these skills of collaboration out to the wider community.
+
+
+
+{% include video.html url="https://www.youtube.com/embed/zDZFcDGpL4U" width="995" height="560" %}
+
+Video link: [Ken Robinson - Changing education paradigms](https://www.ted.com/talks/ken_robinson_changing_education_paradigms/discussion)

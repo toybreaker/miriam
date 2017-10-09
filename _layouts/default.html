@@ -14,6 +14,26 @@
 
     <div class="bungkus group">
 
+      {% if page.image %}
+      <div class="product_image_group">
+
+        <div class="slideshow_wrap">
+          <div class="slideshow slideshow-padding">
+            <div class="slideshow-slide-list slideshow-float">
+              <div class="slideshow-slide ">
+
+                <div class="" data-src="{{ page.image | global_asset_url }}" style="background-image: url('{{ page.image | global_asset_url }}');">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      {% endif %}
+
+
       <div class="container" role="main">
 
         <div class="product_text">
