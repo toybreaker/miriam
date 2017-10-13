@@ -2,7 +2,7 @@
 layout: default
 title: Bio
 description: #
-image: /assets/p/gallery/IMG_0770.jpg
+image: /assets/p/bio/3153-723_web-horizontal.jpg
 ---
 ## Biography
 

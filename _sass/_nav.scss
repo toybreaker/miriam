@@ -1,6 +1,6 @@
 //BEM__BLOCKS
 
-nav {
+nav[aria-label="Secondary"] {
   @extend %no_select;
   padding: 0;
   background-color: transparent;
@@ -72,7 +72,7 @@ nav {
 
 //BEM MODIFIERS
 .nav__link--left {
-  left: 1.5vw;
+  left: 1rem;
 
   &:hover + .nav__posttitle--left {
     opacity: 1;
@@ -82,7 +82,7 @@ nav {
 }
 
 .nav__link--right {
-  right: 1.5vw;
+  right: 1rem;
 
   &:hover + .nav__posttitle--right {
     opacity: 1;

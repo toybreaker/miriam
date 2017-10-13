@@ -2,7 +2,7 @@
 menu with just 3/4 item
 {% endcomment %}
 
-<nav class="menu menu_header" role="menu">
+<nav class="menu menu_header" role="navigation" aria-label="Primary">
 
   {% for item in site.data.menu_short %}
     {% if page.url contains item.url %}
