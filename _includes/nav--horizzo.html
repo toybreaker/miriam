@@ -4,7 +4,7 @@
     <a class="nav__link nav__link--left group" rel="prev" href="{{ page.previous.url | prepend: site.baseurl }}" title="previous">
       {% include svg/use.html id="icn--previous" class="previous" %}
     </a>
-    <span class="nav__posttitle nav__posttitle--left">{{page.next.product_group | capitalize }}.{{page.previous.title}}</span>
+    <span class="nav__posttitle nav__posttitle--left">{{page.previous.product_group | capitalize }}.{{page.previous.title}}</span>
   {% endif %}
 
   {% if page.next.url %}
