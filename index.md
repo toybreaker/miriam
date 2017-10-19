@@ -22,3 +22,5 @@ I endeavor to foster an environment where students can work together toward thei
 {% include video.html url="https://www.youtube.com/embed/zDZFcDGpL4U" width="995" height="560" %}
 
 Video link: [Ken Robinson - Changing education paradigms](https://www.ted.com/talks/ken_robinson_changing_education_paradigms/discussion)
+
+[Release of Liability from Pelangi School](/assets/pdf/release.pdf)
