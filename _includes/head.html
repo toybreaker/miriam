@@ -2,6 +2,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' mailto:*">
 
   <title>{{ site.title }} | {% if page.layout == 'home' %}{{ site.subtitle | upcase }}{% else %}{{ page.title | upcase }}{% endif %}</title>
 
@@ -21,7 +22,7 @@
 
   {% include favicons.html %}
 
-  {% seo %}
+  {% seo title=false %}
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Raleway:400,500,600" rel="stylesheet">
 
